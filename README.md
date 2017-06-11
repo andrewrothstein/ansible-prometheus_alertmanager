@@ -2,7 +2,7 @@ andrewrothstein.prometheus-alertmanager
 =========
 [![Build Status](https://travis-ci.org/andrewrothstein/ansible-prometheus-alertmanager.svg?branch=master)](https://travis-ci.org/andrewrothstein/ansible-prometheus-alertmanager)
 
-Installs the [Prometheus Alert Manager](https://github.com/prometheus/alertmanager)
+Installs the [Prometheus Alert Manager](https://github.com/prometheus/alertmanager).
 
 Requirements
 ------------
