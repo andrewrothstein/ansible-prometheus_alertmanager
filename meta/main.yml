@@ -1,0 +1,38 @@
+---
+galaxy_info:
+  author: Andrew Rothstein
+  description: installs prometheus alert manager
+  company: PointState Capital
+  license:
+    - MIT
+  min_ansible_version: 2.0
+  platforms:
+    - name: EL
+      versions:
+        - all
+    - name: Fedora
+      versions:
+        - all
+    - name: Ubuntu
+      versions:
+        - all
+    - name: Alpine
+      versions:
+        - all
+    - name: Debian
+      versions:
+        - jessie
+  galaxy_tags:
+    - development
+
+dependencies:
+  - src: andrewrothstein.prometheus-installer
+    version: v1.0.0
+    prometheus_installer_appname: alertmanager
+    prometheus_installer_version: '0.7.0'
+    prometheus_installer_checksums:
+      darwin-amd64: sha256:222e17ae6d5082f13015ba47e3a6f091519d88efda50e9a5448c19e7e2cbed4c
+      linux-amd64: sha256:a575f7704e27bda12d425dcf8f3354fbb7d22476c78a055386cc7e250825670d
+      windows-amd64: sha256:6d437bb20313eb49776eb385260dc85a7be35169264f9e34743a4c31ae994bf7
+
+  
