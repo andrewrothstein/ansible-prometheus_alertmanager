@@ -28,9 +28,7 @@ galaxy_info:
 
 dependencies:
   - src: andrewrothstein.prometheus-installer
-    version: v2.0.0
+    version: v2.0.3
     prometheus_installer_versions:
       - name: alertmanager
-        version: '0.17.0'
-
-  
+        version: '0.18.0'
