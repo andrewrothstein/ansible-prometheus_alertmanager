@@ -1,11 +1,8 @@
 ---
-- name: resolve platform specific vars
-  include_vars: '{{ item }}'
-  with_first_found:
-    - files:
-        - '{{ ansible_distribution }}-{{ ansible_distribution_release }}.yml'
-        - '{{ ansible_distribution }}.yml'
-        - '{{ ansible_os_family }}.yml'
-      skip: true
-      paths:
-        - '{{ role_path }}/vars'
+- name: Installing prometheus alertmanager
+  ansible.builtin.include_role:
+    name: andrewrothstein.prometheus_installer
+  vars:
+    prometheus_installer_versions:
+      - name: alertmanager
+        version: '{{ prometheus_alertmanager_ver }}'
